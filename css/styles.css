@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECF8F9;
+}
+#app-heading {
+    color: #27374D;
+}
+#app-sub-heading {
+    color: #643843;
+}
+
+/* WORD COUNTER APPLICATION DOCS SECTION */
+#word-counter-image {
+    width: 20%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+hr {
+    border-style: none;
+    border-bottom: 8px dotted #612a2a;
+    margin: 2.5% 45%;
+}
+.nav-link {
+    width: 24%;
+    color: #380303!important;
+}
+.order-counting {
+    border: 1px solid #4b4949;
+    border-radius: 5px;
+    background-color: #b4b0b0c4;
+}
+#rule-image, #no-image {
+    width: 90%;
+    height: auto;
+}
+.my-right-border {
+    border-style: none;
+    border-right: 2px dashed #424141;
+}
+.my-left-border {
+    border-style: none;
+    border-left: 2px dashed #424141;
+}
+#input-image {
+    width: 700px;
+    height: auto;
+}
+#action-table .action-image {
+    background-color: #2B2B2B;
+    text-align: left!important;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+#action-table th, #action-table td {
+    border: 1px solid #494848;
+}
+#action-table th {
+    background-color: #e4d5d5;
+}
+#action-table td {
+    font-size: 0.9rem;
+}
+.explain-td {
+    text-align: left!important;
+    padding-left: 10px;
+}
+
+/* TEXT HANDLER CLASS DOCS SECTION */
+#my-text-table thead,
+#my-text-table tbody {
+    border: 2px solid #0f0f0fcb;
+    width: 100%;
+}
+#my-text-table th,
+#my-text-table td {
+    border: 2px dotted #0f0f0fcb;
+}
+#my-text-table th {
+    background-color: #4b49494b;
+}
+.image-td {
+    background-color: #2B2B2B;
+    text-align: left!important;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;   
+}
+
+/* LARGE FILE HANDLER CLASS DOCS SECTION */
+#my-file-table thead,
+#my-file-table tbody {
+    border: 2px solid #0e0808cb;
+    width: 100%;
+}
+#my-file-table th,
+#my-file-table td {
+    border: 2px dotted #202020cb;
+}
+#my-file-table th {
+    background-color: #5755554b;
+}
+.file-image {
+    background-color: #2B2B2B;
+    text-align: left!important;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+
+/* VIDEO TUTORIAL SECTION */
+.video-hr {
+    border: none;
+    border-bottom: 2px solid #464444;
+    width: 80%;
+    margin: 10px auto!important;
+}

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word Counter Docs</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+    <!-- Tabs Section -->
+    <div class="text-center">
+        <img id="word-counter-image" src="img/app/word-counter.jpg" alt="word-counter-image">
+    </div>
+    <h3 id="app-heading" class="text-center fw-bold mt-4 mb-2">Word Counter Console Based Application - with Python</h3>
+    <h5 id="app-sub-heading" class="mt-2 mb-4 fw-bold text-center">DOCUMENTATION</h5>
+    <hr>
+    <section>
+        <nav class="ms-4 me-4">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Word Counter Application</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Text Handler Class</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Large File Handler Class</button>
+              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">How to use program - Watch Videos</button>
+            </div>
+        </nav>
+        <div class="tab-content ms-4 me-4 text-center" id="nav-tabContent">
+            <!-- Word Counter Application Content -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div>
+                    <h5 class="text-center mt-5 mb-3">How Application Works -> Step-By-Step</h5>
+                    <!-- First Step -->
+                    <p class="text-center fw-bold order-counting">& 1</p>
+                    <p>Program welcomes <strong>User</strong> into the program and gives a first question if he/she wants to see rules, how to use application in the most better way.</p>
+                    <img src="img/app/1.jpg" alt="first-image">
+                    <!-- Second Step -->
+                    <p class="text-center mt-5 mb-2 fw-bold order-counting">& 2</p>
+                    <table class="mb-4">
+                        <thead>
+                            <th class="text-success fw-bold">YES</th>
+                            <th class="text-danger fw-bold">NO</th>
+                        </thead>
+                        <tbody>
+                            <tr class="p-3">
+                                <td>
+                                    If <strong>user</strong> types 'YES' then program will display the application rules
+                                </td>
+                                <td>If <strong>user</strong> types 'NO' then program will continue to another step</td>
+                            </tr>
+                            <tr class="p-3">
+                                <td class="my-right-border"><img id="rule-image" src="img/app/rules.jpg" alt="rules-image"></td>
+                                <td class="my-left-border"><img id="no-image" src="img/app/no.jpg" alt="no-rules"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Third Step -->
+                    <p class="text-center mt-5 mb-2 fw-bold order-counting">& 3</p>
+                    <p>Program asks <strong>User</strong> next Question and <strong>User</strong> has to choose - in which source he/she wants to count the quantity of word occurrences. 
+                        <strong>User</strong> has 2 choices: input or file, but also he/she can type special keyword - 'stop' and close the running program permanently!
+                    </p>
+                    <img class="mb-3" src="img/app/2.jpg" alt="second-question-image">
+                    <!-- Fourth Step -->
+                    <p class="text-center mt-5 mb-2 fw-bold order-counting">& 4</p>
+                    <p>Based on <strong>User</strong> answer, following actions will be executed</p>
+                    <table class="mb-5" id="action-table">
+                        <thead>
+                            <th class="ps-1 pe-1">ANSWER</th>
+                            <th>EXPLANATION</th>
+                            <th>RESULT</th>
+                        </thead>
+                        <tbody>
+                            <!-- input row -->
+                            <tr>
+                                <td class="text-primary fw-bold">INPUT</td>
+                                <td class="explain-td">
+                                    <ul class="mt-1 mb-1">
+                                        <li>user enters: <strong>input</strong> keyword in the console.</li>
+                                        <li>user enters some text in the console.</li>
+                                        <li>user enters desired word, which quantity will be counted.</li>
+                                        <li>final answer will be printed out by the program.</li>
+                                    </ul>
+                                </td>
+                                <td class="action-image"><img id="input-image" src="img/app/input.jpg" alt="input-way"></td>
+                            </tr>
+                            <!-- file row -->
+                            <tr>
+                                <td class="text-success fw-bold">FILE</td>
+                                <td class="explain-td">
+                                    <ul class="mt-1 mb-1">
+                                        <li>user enters: <strong>file</strong> keyword in the console.</li>
+                                        <li>user enters the <strong>exact/correct</strong> location of target file.</li>
+                                        <li>user enters desired word, which quantity will be counted.</li>
+                                        <li>final answer will be printed out by the program.</li>
+                                    </ul>
+                                </td>
+                                <td class="action-image"><img src="img/app/file.jpg" alt="stop-way"></td>
+                            </tr>
+                            <!-- file sub-row -->
+                            <tr>
+                                <td class="text-success fw-bold">FILE</td>
+                                <td class="explain-td">
+                                    <ul class="mt-1 mb-1">
+                                        <li>user enters: <strong>file</strong> keyword in the console.</li>
+                                        <li>user enters the <strong>wrong/invalid</strong> location of target file.</li>
+                                        <li>program gives feedback and asks user to enter valid location again.</li>
+                                    </ul>
+                                </td>
+                                <td class="action-image"><img src="img/app/wrong.jpg" alt="location-image"></td>
+                            </tr>
+                            <!-- stop row -->
+                            <tr>
+                                <td class="text-danger fw-bold">STOP</td>
+                                <td class="explain-td">
+                                    <ul class="mt-1 mb-1">
+                                        <li>user enters: <strong>stop</strong> keyword in the console.</li>
+                                        <li>The execution of program will be stopped, program will print out final farewell message.</li>
+                                    </ul>
+                                </td>
+                                <td class="action-image"><img src="img/app/stop.jpg" alt="file-way"></td>
+                            </tr>
+                            <!-- other row -->
+                            <tr>
+                                <td class="text-dark fw-bold">OTHER</td>
+                                <td class="explain-td">
+                                    <ul class="mt-1 mb-1">
+                                        <li>user enters: any other word - beside => <strong>input, file, stop</strong>.</li>
+                                        <li>Program asks user again and again until, he/she enters one from following keywords: <b>input, file, stop</b></li>
+                                    </ul>
+                                </td>
+                                <td class="action-image"><img src="img/app/again.jpg" alt="again-image"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Text Handler Class Content -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="me-3 ms-3">
+                    <h5 class="text-center mt-5 mb-4">Main functionality of - <strong>TextHandler</strong> class</h5>
+                    <table id="my-text-table" class="mb-5">
+                        <thead>
+                            <th>Method</th>
+                            <th>How It works</th>
+                            <th>Code</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">replace_punctuations</td>
+                                <td class="text-start ps-2">method takes one string parameter - <b>text</b> and replaces every punctuation symbols with empty string</td>
+                                <td class="image-td"><img src="img/text/replace.jpg" alt="replace-code"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">count_word_quantity</td>
+                                <td class="text-start ps-2">method takes two string parameters: <b>text</b> and <b>word</b>, then uses 'replace_punctuations' method 
+                                    to clean provided text and finally returns the number of occurrences of provided word in provided text.
+                                </td>
+                                <td class="image-td"><img src="img/text/count.jpg" alt="count-image"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Large File Handler Class Content -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <div class="ms-3 me-3">
+                    <h5 class="text-center mt-5 mb-4">Main functionality of - <strong>LargeFileHandler</strong> class</h5>
+                    <table id="my-file-table" class="mb-5">
+                        <thead>
+                            <th>Method</th>
+                            <th>How It works</th>
+                            <th>Code</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">check_file_existance</td>
+                                <td class="text-start ps-2 pe-2">method checks, if file exists on location provided by user.</td>
+                                <td class="file-image"><img src="img/file/check.jpg" alt="check-image"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">split_file</td>
+                                <td class="text-start ps-2 pe-2">method takes <strong>file_path</strong> as a string parameter and splits found large 
+                                    .txt file into smaller chunks - 10K size. Files will be located in <strong>split_files directory</strong>.
+                                </td>
+                                <td class="file-image"><img src="img/file/split.jpg" alt="split-image"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">clean_split_file_directory</td>
+                                <td class="text-start ps-2 pe-2">method cleans <strong>split_files directory</strong> from newly created small files/chunks.
+                                    After executing this method - that files will be removed permanenetly.
+                                </td>
+                                <td class="file-image"><img src="img/file/clean.jpg" alt="clean-image"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">get_file_name_list</td>
+                                <td class="text-start ps-2 pe-2">method checks <strong>split_files directory</strong> and returns the names of all .txt file as a list.</td>
+                                <td class="file-image"><img src="img/file/get.jpg" alt="get-image"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">replace_punctuation</td>
+                                <td class="text-start ps-2 pe-2">method takes one string parameter - <b>text</b> and replaces every punctuation symbol with empty string.</td>
+                                <td class="file-image"><img src="img/file/replace.jpg" alt="replace-image"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary fw-bold ps-1 pe-1">count_word_quantity</td>
+                                <td class="text-start ps-2 pe-2">
+                                    method takes two string parameters: <b>file_path</b> and <b>word</b>. 
+                                    This method executes 'split_file' and 'get_file_name_list' methods,
+                                    then iterates through each small .txt file and counts the number of occurrences
+                                    of provided word in each file. Finally method will sum-up counting results,
+                                    executes 'clean_split_file_directory' method and returns final quantity.
+                                </td>
+                                <td class="file-image"><img src="img/file/count.jpg" alt="count-image"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- How To Use - Video / Image Content -->
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                <div class="ms-3 me-3">
+                    <h5 class="text-center mt-5 mb-4">Video Tutorial - How to use program easily</h5>
+                    <hr class="video-hr">
+                    <!-- first input video -->
+                    <h6 class="text-center text-primary fw-bold">Count Word Quantity In User Input</h6>
+                    <div class="input-video mt-4 mb-5">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/z1MRN7kQ6Og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <!-- second file video -->
+                    <hr class="video-hr">
+                    <h6 class="text-center text-primary fw-bold">Count Word Quantity In a Huge File</h6>
+                    <div class="input-video mt-4 mb-5">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m4TV7dIKgJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- author paragraph -->
+            <p class="mb-5">created by - nika chinchaladze</p>
+        </div>
+    </section>
+
+    <!-- Boostrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
